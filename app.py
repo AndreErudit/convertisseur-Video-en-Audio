@@ -44,13 +44,16 @@ def convert():
 
     try:
         command = [
-            "ffmpeg",
-            "-i", input_path,
-            "-vn",
-            "-ab", "192k",
-            "-y",
-            output_path
-        ]
+        "ffmpeg",
+        "-i", input_path,
+        "-vn",
+        "-acodec", "libmp3lame",
+        "-b:a", "128k",
+        "-threads", "2",
+        "-preset", "ultrafast",
+        "-y",
+        output_path
+    ]
 
         subprocess.run(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
 
