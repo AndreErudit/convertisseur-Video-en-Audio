@@ -49,3 +49,6 @@ function convert() {
 
     status.textContent = "⏳ Upload...";
 }
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/static/sw.js");
+}
