@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #00c896;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00a67d;
+}
+
+/* 🔥 progress bar */
+.progress {
+    width: 100%;
+    background: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0%;
+    background: #00c896;
+}
+
+#status {
+    margin-top: 15px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

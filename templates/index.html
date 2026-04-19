@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convertisseur Vidéo → MP3</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🎧 Convertisseur MP3</h1>
+    <p class="subtitle">Convertis tes vidéos en audio facilement</p>
+
+    <input type="file" id="fileInput" accept="video/*">
+    <button onclick="convert()">Convertir</button>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <p id="status"></p>
+
+    <!-- 💰 espace pub -->
+    <div class="ads">
+        <p>Publicité</p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
